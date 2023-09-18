@@ -10,6 +10,6 @@ Simple Python script that generates a random password and strengthen a weak prov
 7. Implement multi-factor authentication (MFA) wherever possible to enhance security.
 # Run
 Linux
-'''bash
-python3 pysworder.py
-'''
+---
+`python3 pysworder.py`
+
