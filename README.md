@@ -9,7 +9,6 @@ Simple Python script that generates a random password and strengthen a weak prov
 6. Avoid password expiration policies that force users to change their passwords regularly without reason, as they can lead to weaker passwords.
 7. Implement multi-factor authentication (MFA) wherever possible to enhance security.
 # Run
-Linux
 ---
-`python3 pysworder.py`
+### `python3 pysworder.py`
 
