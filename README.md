@@ -1,5 +1,6 @@
 # Pysworder
 Simple Python script that generates a random password and strengthen a weak provided password
+---
 # NIST Special Publication 800-63B: Digital Identity Guidelines (United States):
 1. Passwords should have a minimum length of at least 8 characters
 2. Longer passwords are generally stronger; encourage the use of passphrases, which are easier to remember and can be longer.
