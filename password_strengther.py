@@ -16,9 +16,9 @@ def export_to_file(new_password):
         with open(file_path, 'w') as password_file:
             password_file.write('[+]The generated password\n')
             password_file.write(new_password)
-            print(f'[+]Password saved to file: {os.path.abspath(file_path)}')
+            print(f'[+] Password saved to file: {os.path.abspath(file_path)}')
     except Exception as error:
-        print(f'[!]Error while saving the password to file: {error}')
+        print(f'[!] Error while saving the password to file: {error}')
 
 
 # Strengthen a weak password provided by the user
@@ -90,9 +90,9 @@ def strengthen_password(weak_password):
     shuffled_password = list(weak_password)
     random.shuffle(shuffled_password)
     new_password = ''.join(shuffled_password)
-    print(f'[+]The new password is ==> {new_password}')
+    print(f'[+] The new password is ==> {new_password}')
     question = input(
-        '[+]Do you want to output the password to a file (y/n)?  ')
+        '[+] Do you want to output the password to a file (y/n)?  ')
     answer = question.lower()
     if (answer == 'y'):
         export_to_file(new_password)

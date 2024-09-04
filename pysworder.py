@@ -22,7 +22,7 @@ def main():
             password_generator.generate_password(password_length)
         else:
             defualt = input(
-                '\033[31m[+]The length is smaller than 10 do you want to continue with the defualt 10 chrachters(y/n)?  \033[0m')
+                '\033[31m[+] The length is smaller than 10 do you want to continue with the defualt 10 chrachters(y/n)?  \033[0m')
             answer = defualt.lower()
             if (answer == 'y'):
                 password_generator.generate_password(10)
@@ -38,7 +38,7 @@ def main():
 
 if __name__ == '__main__':
     ascii_art()
-    print('\033[32m[1]Generate a New Password\033[0m', end='')
-    print('\033[32m          [2]Strengthen a Password\033[0m')
+    print('\033[32m[1] Generate a New Password\033[0m', end='')
+    print('\033[32m          [2] Strengthen a Password\033[0m')
     print('\n')
     main()

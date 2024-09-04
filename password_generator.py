@@ -13,11 +13,11 @@ def export_to_file(generated_password):
     file_path = './generated_password.txt'
     try:
         with open(file_path, 'w') as password_file:
-            password_file.write('[+]The generated password\n')
+            password_file.write('[+] The generated password\n')
             password_file.write(generated_password)
-            print(f'[+]Password saved to file: {os.path.abspath(file_path)}')
+            print(f'[+] Password saved to file: {os.path.abspath(file_path)}')
     except Exception as error:
-        print(f'[!]Error while saving the password to file: {error}')
+        print(f'[!] Error while saving the password to file: {error}')
 
 
 # Generates a random password based on the parameter size
@@ -49,9 +49,9 @@ def generate_password(number_of_chars):
     shuffled_password = list(generated_password)
     random.shuffle(shuffled_password)
     final_password = ''.join(shuffled_password)
-    print(f'[+]The generated password is ==> {final_password}')
+    print(f'[+] The generated password is ==> {final_password}')
     question = input(
-        '[+]Do you want to output the password to a file (y/n)?  ')
+        '[+] Do you want to output the password to a file (y/n)?  ')
     answer = question.lower()
     if (answer == 'y'):
         export_to_file(final_password)
